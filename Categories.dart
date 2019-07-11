@@ -3,14 +3,14 @@ import '../pages/productList.dart';
 import 'package:path/path.dart';
 
 class Categories extends StatelessWidget {
-  Widget _buildSingleCategory(imageName, caption,BuildContext context) {
+  Widget _buildSingleCategory(imageName,caption, BuildContext context) {
     return Padding(
       padding: EdgeInsets.all(10),
       child: InkWell(
         onTap: () {
            Navigator.of(context)
               .push(MaterialPageRoute(builder: (context)=>
-             productList(),
+             productList( appbarkey:caption),
           ));
         },
         child: Container(
