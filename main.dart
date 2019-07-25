@@ -1,35 +1,16 @@
 import 'package:flutter/material.dart';
-//import './greet.dart';
-import './calculator.dart';
-//import 'package:greetapp/raw/Firststate.dart';
-//import 'package:greetapp/raw/sizeBox.dart';
-void main() {
-  runApp(MaterialApp(
-      title: 'calculator',
+import './jsonList.dart';
+import './LoginPAge.dart';
+void main() => runApp(MyApp());
 
-      home: Scaffold(
-        backgroundColor: Colors.white,
-        appBar: AppBar(
-
-          title: Text(
-            'calculator',
-            style: TextStyle(
-                fontSize: 30, fontWeight: FontWeight.bold, color: Colors.black),
-          ),
-          backgroundColor: Colors.purple,
-        ),
-
-
-       body: calculator() ,
-
-
-
-
-
-
-
-
-
-      )));
-
+class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'exp',
+      
+      home: LoginPAge(),
+    );
+  }
 }
